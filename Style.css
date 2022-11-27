@@ -42,3 +42,15 @@ ul li a:hover{
     max-width: 1200px;
     margin: auto;
 }
+
+.btn{
+    cursor: pointer;
+    color: #cc0052;
+    font-size: 18px;
+    letter-spacing: 2px;
+    padding: 10px ;
+    border: 2px solid #003333;
+    background: transparent;
+    font-weight: bold;
+    margin:8px 8px;
+}
