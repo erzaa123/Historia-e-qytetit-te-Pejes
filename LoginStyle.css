@@ -1,10 +1,61 @@
-header{
-    
+
+main{
+
+    max-width: 1200px;
+    margin: auto;
+}
+
+ul{
+    float: right;
+    display: flex;
+}
+
+ul li{
+    list-style: none;
+    display: inline;
+    font-size: 30px;
+    padding: 10px ;
+}
+
+ul li a{
+
+    text-decoration: none;
+    transition: 0.4s ease-in-out;
+    padding: 5px 20px;
+    color:aliceblue
+}
+
+ul li a:hover{
+   
+    color:black
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+
+body{
     background-image: url(login.jpg);
     height: 100vh;
     background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
+.container{
+    position: relative;
+    max-width: 430px;
+    width: 100%;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
 
-
+.container .form{
+    padding: 30px;
+}
 
