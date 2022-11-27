@@ -1,42 +1,8 @@
-
-
-.main{
-
-    max-width: 1200px;
-    margin: auto;
-}
-
-ul{
-    float: right;
-    display: flex;
-}
-
-ul li{
-    list-style: none;
-    display: inline;
-    font-size: 30px;
-    padding: 10px ;
-}
-
-
-ul li a{
-
-    text-decoration: none;
-    transition: 0.4s ease-in-out;
-    padding: 5px 20px;
-    color:aliceblue
-}
-
-ul li a:hover{
-
-    color:black
-}
-
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins',sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 body{
@@ -65,5 +31,15 @@ body{
     position: relative;
     font-size: 27px;
     font-weight: 600;
+}
+
+.form .title::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 30px;
+    background-color: #4070f4;
 }
 
