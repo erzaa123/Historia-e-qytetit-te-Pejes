@@ -60,3 +60,7 @@ ul li a:hover{
     color: #000;
 
 } 
+
+*{
+    margin:0;
+}
