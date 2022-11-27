@@ -19,7 +19,7 @@ ul{
 ul li{
     list-style: none;
     display: inline;
-    font-size: 20px;
+    font-size: 30px;
     
 }
 
@@ -33,10 +33,12 @@ ul li a{
 }
 
 ul li a:hover{
+    
     color:black
 }
 
 .main{
+   
     max-width: 1200px;
     margin: auto;
 }
