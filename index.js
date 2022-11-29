@@ -7,7 +7,7 @@ var person = {
    };
 
 if(person.age > 18){
-    alert("Deshironi info nga faqja!");
+    alert("Deshironi info nga faqja jon!");
 }else{
     console.log("eee");
 }
