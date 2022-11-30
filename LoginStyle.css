@@ -5,6 +5,32 @@
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
 }
+
+ul{
+  float: right;
+  display: flex;
+}
+
+ul li{
+  list-style: none;
+  display: inline;
+  font-size: 30px;
+  padding: 10px ;
+}
+
+
+ul li a{
+  
+  text-decoration: none;
+  transition: 0.4s ease-in-out;
+  padding: 5px 20px;
+  color:aliceblue
+}
+
+ul li a:hover{
+  
+  color:black
+}
 html,body{
   display: grid;
   height: 100%;
