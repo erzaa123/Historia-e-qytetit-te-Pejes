@@ -1,5 +1,4 @@
-
-      var validate = function(e) {
+    var validate = function(e) {
           var fields = document.querySelectorAll('.form-container textarea, .form-container input[type="text"]');
           var regEx;
           var removeSpan;
