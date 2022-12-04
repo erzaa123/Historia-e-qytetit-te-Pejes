@@ -4,7 +4,7 @@
         <link rel="stylesheet" href="Style.css">
 <title>Contact Us</title>
     </head>
-<body>
+    <body>
     <header>
         <div class="main">
             <ul>
@@ -16,6 +16,89 @@
             </ul>
         </div>
     </header>
+    <br><br><br><br><br><br><br>
+        <div class="form-container">
+            <h1>Contact Form</h1>
+            <form name="contactForm" method="post" onsubmit = "return validate()" action="#">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="Your name" >
+              <span class="errors"></span>
+          
+          
+              <label for="email">Email</label>
+              <input type="text" placeholder="Email address" id="email" name="email" >
+              <span class="errors"></span>
+          
+          
+              <label for="phone">Phone</label>
+              <input type="text" placeholder="Phone number" id="phone" name="phone" >
+              <span class="errors"></span>
+          
+              
+              <label for="subject">Message</label>
+              <textarea placeholder="Your message" cols="132" rows="5" name="subject" id="subject"></textarea>
+              <span class="errors"></span>
+          
+          
+              <button type="submit" value="Submit">Submit</button>
+            </form>
+          </div>
+
+          <style>
+
+            body {
+              font-family: sans-serif;
+            }
+            .form-container {
+              width: 50%;
+              margin: auto;
+              padding: 2%;
+              border: 1px solid #f7f7f7;
+            }
+            label {
+              display: block;
+              margin-top: 25px;
+              font-size: 1rem;
+            }
+            input, textarea {
+              width: 80%;
+              padding: 15px;
+              font-size: 1rem;
+              border: 1px solid #ccc;
+            }
+            button {
+              width: 82.5%;
+              height: 50px;
+              border-radius: 5px;
+              color: #fff;
+              background: red;
+              line-height: 1rem;
+              font-size: 1rem;
+              cursor: pointer;
+              border: 1px solid red;
+              margin-top: 25px;
+              transition: color .4s ease-out, background .4s ease-out;
+            }
+            button:hover {
+              color: red;
+              background: #fff;
+            }
+            .errors {
+              display: block;
+              color: red;
+              margin-top: 5px;
+            }
+            .error {
+              -webkit-transition: .2s;
+              -moz-transition: .2s;
+              -ms-transition: .2s;
+              -o-transition: .2s;
+              transition: .2s;
+              box-shadow: 0 0 15px 0 rgba(255,36,0,1);
+            }
+            </style>
+
+          <script src="index.js"></script>
+
 </body>    
-   
 </html>
