@@ -1,114 +1,39 @@
-    var validate = function(e) {
-          var fields = document.querySelectorAll('.form-container textarea, .form-container input[type="text"]');
-          var regEx;
-          var removeSpan;
-          var par;
-          var check = false;
-          var val;
-          var errArr = [];
-      
-          for (var i = 0; i < fields.length; i++) {
-              if (fields[i].value === "") {
-                
-                  if (fields[i].nextElementSibling.classList.contains('error')) {
-                    removeSpan = fields[i].nextElementSibling;
-                    par = fields[i].parentNode;
-                    par.removeChild(removeSpan);
-                    fields[i].nextElementSibling.innerHTML =  fields[i].placeholder + " is required!";
-                    fields[i].style.boxShadow = "0 0 2px 1px #cc0001";
-                    check = false;
-                    errArr.push(fields[i]);
-                  }
-                  fields[i].nextElementSibling.innerHTML =  fields[i].placeholder + " is required!";
-                  fields[i].style.boxShadow = "0 0 2px 1px #cc0001";
-                  check = false;
-                  errArr.push(fields[i]);
-              } else {
-      
-                  // check if message and name values contain valid characters.
-                  if (fields[i].id !== 'email' && fields[i].id !== 'phone') {
-                      val = isValidChar(fields[i]);
-                      if(val === false) {
-                        fields[i].nextElementSibling.innerHTML = "Are you trying to HACK ME!";
-                        fields[i].style.boxShadow = "0 0 2px 1px #cc0001";
-                        check = false;
-                        errArr.push(fields[i]);
-                      } else {
-                        fields[i].nextElementSibling.innerHTML = "";
-                        fields[i].style.boxShadow = "none";
-                        check = true;
-                      }
-                  }
-                
-                  if(fields[i].id === 'phone') {
-                    val = isValidPhone(fields[i]);
-                    if(val === false) {
-                      fields[i].nextElementSibling.innerHTML = " Your phone number is not valid!";
-                      fields[i].style.boxShadow = "0 0 2px 1px #cc0001";
-                      check = false;
-                      errArr.push(fields[i]);
-                    } else {
-                      fields[i].nextElementSibling.innerHTML = "";
-                      fields[i].style.boxShadow = "none";
-                      check = true;  
-                    }
-                  }
-      
-                  if (fields[i].id === 'email') {
-                      val = isValidEmail(fields[i]);
-                      if(val === false) {
-                          fields[i].nextElementSibling.innerHTML = "Your email address is not valid!";
-                          fields[i].style.boxShadow = "0 0 2px 1px #cc0001";
-                          check = false;
-                          errArr.push(fields[i]);
-                      } else {
-                          fields[i].nextElementSibling.innerHTML = "";
-                          fields[i].style.boxShadow = "none";
-                          check = true;
-                      }
-                  }
-              }
-          }
-        
-          if(check === false) {
-            var count = 0;
-            var toErr = setInterval(function() {
-              var e = errArr[0].offsetTop + -25;
-              var pos = Math.abs(e);
-              if(count < pos) {
-                count ++;
-                window.scrollTo(0, count);
-              } else {
-                clearInterval(toErr);
-              }
-            }, 1);
-          }
-          
-          return check
-      
-          // Helper functions.
-          function isValidEmail(e) {
-              regEx = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
-              var email = e.value;
-              if (!regEx.test(email)) {
-                  return false;
-              }
-          }
-      
-          function isValidChar(e) {
-              regEx = /^[a-zA-Z@#$%!?^&*()_+\-=\[\]{};':"\\|,.\/? ]*$/;
-              var value = e.value;
-              if (!regEx.test(value)) {
-                  return false;
-              }
-          }
-        
-          function isValidPhone(e) {
-            regEx = /^[+]?[(]?[+]?\d{2,4}[)]?[-\s]?\d{2,8}[-\s]?\d{2,8}$/;
-            var value = e.value;
-            if(!regEx.test(value)) {
-              return false;
-            }
-          }
-      };
-      
+function validate(){
+  var name = document.getElementById("name").value;
+  var subject = document.getElementById("subject").value;
+  var phone = document.getElementById("phone").value;
+  var email = document.getElementById("email").value;
+  var message = document.getElementById("message").value;
+  var error_message = document.getElementById("error_message");
+  
+  error_message.style.padding = "10px";
+  
+  var text;
+  if(name.length < 5){
+    text = "Please Enter valid Name";
+    error_message.innerHTML = text;
+    return false;
+  }
+  if(subject.length < 10){
+    text = "Please Enter Correct Subject";
+    error_message.innerHTML = text;
+    return false;
+  }
+  if(isNaN(phone) || phone.length != 10){
+    text = "Please Enter valid Phone Number";
+    error_message.innerHTML = text;
+    return false;
+  }
+  if(email.indexOf("@") == -1 || email.length < 6){
+    text = "Please Enter valid Email";
+    error_message.innerHTML = text;
+    return false;
+  }
+  if(message.length <= 140){
+    text = "Please Enter More Than 140 Characters";
+    error_message.innerHTML = text;
+    return false;
+  }
+  alert("Form Submitted Successfully!");
+  return true;
+}
