@@ -15,6 +15,7 @@
                 <li><a href="ContactUs.php">Contact Us</a></li>  
                 <li><a href="News.php">News</a></li>
                 <button class="btn"><a href="Login.html">LOGIN</a></button>
+                <p>hello</p>
             </ul>
         </div>
     </header>  
