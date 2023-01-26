@@ -130,7 +130,7 @@ function showSlides(n) {
                 <li><a href="AboutUs.php">About Us</a></li> 
                 <li><a href="ContactUs.php">Contact Us</a></li>  
                 <li><a href="News.php">News</a></li>
-                <button class="btn"><a href="Login.html">LOGIN</a></button>
+                <button class="btn"><a href="register_form.php">LOGIN</a></button>
             </ul>
         </div>
     </header> 
