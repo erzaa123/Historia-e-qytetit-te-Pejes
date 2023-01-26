@@ -150,13 +150,21 @@ function showSlides(n) {
           <div class="text">Caption Two</div>
         </div>
 
+
         <div class="mySlides fade">
           
           <img src="foto3.jpg" style="width:100%" height="300">
           <div class="text">Caption Two</div>
         </div>
+
+        <div class="mySlides fade">
+          
+          <img src="foto4.jpg" style="width:100%" height="300">
+          <div class="text">Caption Two</div>
+        </div>
  
         <a class="prev" onclick="plusSlides(-1)">&lt;</a>
+        <a class="next" onclick="plusSlides(1)">&gt;</a>
         <a class="next" onclick="plusSlides(1)">&gt;</a>
         <a class="next" onclick="plusSlides(1)">&gt;</a>
  
@@ -167,6 +175,7 @@ function showSlides(n) {
   <span class="dot" onclick="currentSlide(1)"></span> 
   <span class="dot" onclick="currentSlide(2)"></span> 
   <span class="dot" onclick="currentSlide(3)"></span> 
+  <span class="dot" onclick="currentSlide(4)"></span> 
 </div>
    
 </body>
