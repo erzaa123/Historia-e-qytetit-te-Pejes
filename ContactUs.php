@@ -27,23 +27,23 @@
             <div class="form-group">
                 <label for="firstname">Firstname</label>
                 <input type="text" name="firstname" id="firstname" class="form-control" required>
-            </div><br>
+            </div>
             <div class="form-group">
                 <label for="lastname">Lastname</label>
                 <input type="text" name="lastname" id="lastname" class="form-control" required>
-            </div><br>
+            </div>
             <div class="form-group">
                 <label for="phone">Phone</label>
                 <input type="tel" name="phone" id="phone" class="form-control" required>
-            </div><br>
+            </div>
             <div class="form-group">
                 <label for="email">Email</label>
                 <input type="email" name="email" id="email" class="form-control" required>
-            </div><br>
+            </div>
             <div class="form-group">
                 <label for="message">Message</label>
                 <input type="text" name="message" id="message" class="form-control" required>
-            </div><br>
+            </div>
             <div class="form-group">
         <button type="submit" class="btn btn-success">Submit</button>
         
