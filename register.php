@@ -12,7 +12,7 @@
         <input type="text" name="lastname" placeholder="lastname..."> <br><br>
         <input type="number" name="phone" placeholder="phone..."> <br><br>
         <input type="text" name="email" placeholder="email..."> <br><br>
-        <input type="text" name="messages" placeholder="username..."> <br><br>
+        <input type="text" name="messages" placeholder="message..."> <br><br>
         <input type="file" name="file" placeholder="file..."> <br><br>
       
 
