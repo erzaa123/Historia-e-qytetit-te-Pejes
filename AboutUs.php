@@ -115,12 +115,12 @@ html {
 
   <div class="column">
     <div class="card">
-      <img src="/w3images/team2.jpg" alt="Mike" style="width:100%">
+      <img src="Gresa.jpg" alt="Gresa" style="width:45%">
       <div class="container">
-        <h2>Mike Ross</h2>
-        <p class="title">Art Director</p>
-        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-        <p>mike@example.com</p>
+        <h2>Gresa Shala</h2>
+        <p class="title">Student</p>
+        <p>I study computer science.</p>
+        <p>ggresashala15@gmail.com</p>
         <p><button class="button">Contact</button></p>
       </div>
     </div>
