@@ -93,35 +93,35 @@ img {vertical-align: middle;}
     <div class="mySlides fade">
   <div class="numbertext">1 / 5</div>
   <img src="photo1.jpg" style="width:100%">
-  <div class="text">Caption One</div> 
+  <div class="text">Photo One</div> 
 </div>
 
 <div class="slideshow-container">
     <div class="mySlides fade">
   <div class="numbertext">2 / 5</div>
   <img src="photo2.jpg" style="width:100%">
-  <div class="text">Caption Two</div> 
+  <div class="text">Photo Two</div> 
 </div>
 
 <div class="slideshow-container">
     <div class="mySlides fade">
   <div class="numbertext">3 / 5</div>
   <img src="photo3.jpg" style="width:100%">
-  <div class="text">Caption Three</div> 
+  <div class="text">Photo Three</div> 
 </div>
 
 <div class="slideshow-container">
     <div class="mySlides fade">
   <div class="numbertext">4 / 5</div>
   <img src="photo4.jpg" style="width:100%">
-  <div class="text">Caption Four</div> 
+  <div class="text">Photo Four</div> 
 </div>
 
 <div class="slideshow-container">
     <div class="mySlides fade">
   <div class="numbertext">5 / 5</div>
   <img src="photo5.jpg" style="width:100%">
-  <div class="text">Caption Five</div> 
+  <div class="text">Photo Five</div> 
 </div>
 
 
