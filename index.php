@@ -90,39 +90,51 @@ img {vertical-align: middle;}
 
     <div class="slideshow-container">
 
-<div class="mySlides fade">
-  <div class="numbertext">1 / 4</div>
-  <img src="foto1.jpg" style="width:100%">
-  <div class="text">Caption Text</div> 
+    <div class="mySlides fade">
+  <div class="numbertext">1 / 5</div>
+  <img src="photo1.jpg" style="width:100%">
+  <div class="text">Caption One</div> 
 </div>
 
-<div class="mySlides fade">
-  <div class="numbertext">2 / 4</div>
-  <img src="foto2.jpg" style="width:100%">
-  <div class="text">Caption Two</div>
+<div class="slideshow-container">
+    <div class="mySlides fade">
+  <div class="numbertext">2 / 5</div>
+  <img src="photo2.jpg" style="width:100%">
+  <div class="text">Caption Two</div> 
 </div>
 
-<div class="mySlides fade">
-  <div class="numbertext">3 / 4</div>
-  <img src="foto3.jpg" style="width:100%">
-  <div class="text">Caption Three</div>
+<div class="slideshow-container">
+    <div class="mySlides fade">
+  <div class="numbertext">3 / 5</div>
+  <img src="photo3.jpg" style="width:100%">
+  <div class="text">Caption Three</div> 
 </div>
 
-<div class="mySlides fade">
-  <div class="numbertext">4 / 4</div>
-  <img src="foto4.jpg" style="width:100%">
-  <div class="text">Caption Four</div>
+<div class="slideshow-container">
+    <div class="mySlides fade">
+  <div class="numbertext">4 / 5</div>
+  <img src="photo4.jpg" style="width:100%">
+  <div class="text">Caption Four</div> 
 </div>
+
+<div class="slideshow-container">
+    <div class="mySlides fade">
+  <div class="numbertext">5 / 5</div>
+  <img src="photo5.jpg" style="width:100%">
+  <div class="text">Caption Five</div> 
+</div>
+
 
 
 </div>
 <br>
 
 <div style="text-align:center">
-  <span class="dot"></span> 
-  <span class="dot"></span> 
-  <span class="dot"></span> 
-  <span class="dot"></span> 
+<span class="dot"></span> 
+<span class="dot"></span> 
+<span class="dot"></span> 
+<span class="dot"></span> 
+<span class="dot"></span>
 </div>
 
   
