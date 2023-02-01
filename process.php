@@ -1,7 +1,7 @@
 <?php
 include("configcontact.php");
 extract($_POST);
-$query = "INSERT INTO `contact-data`(`firstname`, `lastname`, `phone`, `email`, `messages`) VALUES ('".$firstname."','".$lastname."',".$phone.",'".$email."','".$message."')";
+$query = "INSERT INTO `contactdata`(`firstname`, `lastname`, `phone`, `email`, `messages`) VALUES ('".$firstname."','".$lastname."',".$phone.",'".$email."','".$message."')";
 $result = $mysqli->query($query);
 if(!$result){
     echo "Something went wrong".$mysqli->error;
