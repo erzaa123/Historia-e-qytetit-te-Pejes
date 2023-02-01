@@ -108,7 +108,7 @@ html {
         <p class="title">Student</p>
         <p>I study computer science.</p>
         <p>erza.haxhiajdini@gmail.com</p>
-        <p><button class="button">Contact</button></p>
+        <p><button class="button"><a href="ContactUs.php">Contact</a></button></p>
       </div>
     </div>
   </div>
@@ -121,7 +121,7 @@ html {
         <p class="title">Student</p>
         <p>I study computer science.</p>
         <p>ggresashala15@gmail.com</p>
-        <p><button class="button">Contact</button></p>
+        <p><button class="button"><a href="ContactUs.php">Contact</a></button></p>
       </div>
     </div>
   </div>
