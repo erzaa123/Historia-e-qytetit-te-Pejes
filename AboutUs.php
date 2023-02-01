@@ -92,16 +92,30 @@ html {
         </div>
     </header>  
     <br><br><br><br><br><br>
+     <?php
+ 
+          require 'aboutusconfig.php';
+          $query = "SELECT * FROM aboutus";
+          $query_run = mysqli_query($connection,$query);
+
+          if(mysqli_num_rows($query_run) > 0)
+          {
+          foreach($query_run as $row)
+          {
+            ?>
+          
     <div class="about-section">
-  <h1>About Us Page</h1>
-  <p>Some text about who we are and what we do.</p>
-  <p>Resize the browser window to see that this page is responsive by the way.</p>
+  <h1><?php echo $row['title']; ?></h1>
+  <p><?php echo $row['name']; ?></p>
+  <p><?php echo $row['description']; ?></p>
 </div>
 
 <h2 style="text-align:center">Our Team</h2>
 <div class="row">
   <div class="column">
     <div class="card">
+    
+       
       <img src="Erëza.jpg" alt="Erëza" style="width: 50%;">
       <div class="container">
         <h2>Erëza Haxhiajdini</h2>
@@ -109,6 +123,13 @@ html {
         <p>I study computer science.</p>
         <p>erza.haxhiajdini@gmail.com</p>
         <p><button class="button"><a href="ContactUs.php">Contact</a></button></p>
+        <?php
+          }
+        }
+        else{
+            echo "No Record Found";
+        }
+        ?>
       </div>
     </div>
   </div>
