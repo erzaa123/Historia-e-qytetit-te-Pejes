@@ -113,7 +113,7 @@ img {vertical-align: middle;}
 <div class="slideshow-container">
     <div class="mySlides fade">
   <div class="numbertext">4 / 5</div>
-  <img src="photo4.jpg" style="width:100%">
+  <img src="photo6.jpg" style="width:100%">
   <div class="text">Photo Four</div> 
 </div>
 
@@ -133,7 +133,7 @@ img {vertical-align: middle;}
 <span class="dot"></span> 
 <span class="dot"></span> 
 <span class="dot"></span> 
-<span class="dot"></span> 
+<span class="dot"></span>
 <span class="dot"></span>
 </div>
 
